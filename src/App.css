@@ -1,38 +1,671 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium web", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fbfcf8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainVideoPage {
+  height: 100vh;
+  animation: fadeIn 2s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(142, 185, 148, 0.433);
+  border-bottom: 1px solid rgb(142, 185, 148);
+  color: white;
+  height: 80px;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  margin: 30px;
+}
+
+nav a:hover {
+  color: rgb(208, 111, 0);
+  transition: ease 0.3s;
+  border-bottom: 1.5px solid rgb(208, 111, 0);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  display: none;
+  opacity: 0;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, #fff);
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.title-container {
+  position: relative;
+  top: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(208, 241, 212);
+  text-shadow: 2px 1px black;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px;
+  z-index: -1;
+}
+
+.shopBtn {
+  margin-left: 20px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: white;
+  padding: 18px;
+  border-radius: 8px;
+  background: linear-gradient(96deg, #1a4d17 0%, #09b643 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.shopBtn:hover {
+  background: linear-gradient(96deg, #09b643 0%, #1a4d17 100%);
+}
+
+.wineryDescription {
+  background-color: #fff;
+  height: auto;
+  padding: 50px 0;
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.description-text {
+  align-self: center;
+  margin: 20px;
+}
+
+.wineryPicture {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newWines {
+  background-color: #fff;
+}
+
+.newWinesTitle {
+  display: flex;
+  justify-content: center;
+  color: rgb(118, 157, 124);
+  text-shadow: 1px 1px black;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(118, 157, 124);
+  padding: 5px;
+}
+
+.about {
+  min-height: 100vh;
+  margin-bottom: 50px;
+  animation: fadeIn 2s ease;
+}
+
+.grapeImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./components/pictures/grape.jpg");
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+}
+
+.titleStyle {
+  color: white;
+  font-size: 50px;
+  text-shadow: 3px 1px rgb(15, 36, 21);
+}
+
+.about-container {
+  margin-top: 20px;
+}
+
+.images-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bigImg {
+  display: flex;
+  height: 70vh;
+}
+
+.littleImgContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pictureBig {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.pictureLittle {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.pictureBig:hover,
+.pictureLittle:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.unique-wines {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+}
+
+.winemaking {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+}
+
+.contact-container {
+  min-height: 100vh;
+  margin-bottom: 50px;
+  animation: fadeIn 2s ease;
+}
+
+.grapeFieldContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("./components/pictures/grapeField.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.contact-text {
+  font-size: 20px;
+  text-shadow: 1px 1px rgb(15, 36, 21);
+  letter-spacing: 2px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title-classic {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
+.title-classic-title {
+  width: 50%;
+  text-align: center;
+  color: rgb(118, 157, 124);
+  text-shadow: 1px 1px black;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.title-classic-subtitle {
+  text-align: center;
+  border-left: 2px solid gray;
+  width: 50%;
+}
+
+.form-container {
+  width: 50%;
+  padding: 5px;
+}
+
+.formAndMap {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+
+  input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 2px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  label {
+    margin-top: 1rem;
+  }
+
+  input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: white;
+    border: none;
+  }
+}
+
+.success-message {
+  background-color: #1a4d17;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.all-contacts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.color-change {
+  color: rgb(96, 93, 93);
+  text-decoration: none;
+}
+
+.cart-position {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer {
+  background-color: #fff;
+  color: rgb(118, 157, 124);
+  padding: 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.cartAndWines {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wines {
+  width: 100%;
+}
+
+.cartPosition {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.cartItems {
+  margin: 20px;
+  border: 2px solid rgb(211, 208, 208);
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.cartStyle {
+  border-radius: 5px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  background-color: #98ab9f64;
+  padding: 15px;
+}
+
+.category-title {
+  margin-top: 10px;
+  padding: 5px;
+  color: rgb(17, 72, 17);
+  font-size: 20px;
+}
+
+.wine-position {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.wineCard {
+  margin: 10px;
+  border: 2px solid rgb(237, 234, 234);
+  background-color: #fafcfc;
+  padding: 20px;
+  min-height: 400px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(17, 72, 17);
+  font-size: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  color: rgb(172, 5, 5);
+}
+
+.wines-picture {
+  border-radius: 5px;
+}
+
+.categoryButtonSelected {
+  background-color: rgb(143, 172, 152);
+}
+
+.categoryButton {
+  margin: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.categoryButton:hover {
+  background-color: #b8c8b8;
+}
+
+.btnAdd {
+  background: rgb(249, 105, 14);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.btnAdd:hover {
+  background-color: rgb(216, 88, 8);
+  transition-duration: 0.5s;
+}
+
+.quantity {
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: 0%;
+  right: 40%;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    display: block;
+    opacity: 1;
+    font-size: 30px;
+  }
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #98ab9f;
+    transition: .9s;
+  }
+
+  header .responsiveNav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1.9rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  .cart-position {
+    justify-content: center;
+  }
+
+  .description-container {
+    flex-wrap: wrap;
+  }
+
+  .pictureBig {
+    width: 100%;
+  }
+
+  .pictureLittle {
+    width: 100%;
+  }
+
+  .littleImg {
+    flex-direction: column;
+  }
+
+  .bigImg {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
+
+  .winemaking {
+    width: 100%;
+  }
+
+  .unique-wines {
+    width: 100%;
+  }
+
+  .titleStyle {
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  .contact-text {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .title-classic {
+    flex-direction: column;
+  }
+
+  .title-classic-title {
+    border-bottom: 1px solid rgb(118, 157, 124);
+    width: 100%;
+  }
+
+  .title-classic-subtitle {
+    border: none;
+    width: 100%;
+  }
+
+  .formAndMap {
+    flex-direction: column;
+  }
+
+  .map {
+    text-align: center;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .all-contacts {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .cartAndWines {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .cartPosition {
+    width: 100%;
+  }
+
+  .wines {
+    width: 100%;
+  }
+
+  .cartItems {
+    padding: 10px;
+  }
+
+  .categories{
+    flex-direction: column;
+  }
+
+  .wines-picture {
+    width: 220px;
+  }
+
+  .map {
+    width: 280px;
+    margin: 0 auto;
+  }
+
 }
