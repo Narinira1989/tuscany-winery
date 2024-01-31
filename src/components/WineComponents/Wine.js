@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChangeQuantity from "../Cart/ChangeQuantity";
-import { addItemToCart } from "../redux/cartSlice";
+import { addItemToCart } from "../../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Alert } from "react-bootstrap";

@@ -5,10 +5,12 @@ import Slider from "./Slider";
 import { useEffect, useState } from "react";
 
 const Home = ({ menuOpen }) => {
+  
   const [titleText, setTitleText] = useState("");
   const title =
     "Tuscany Winery inviting you into a world of wines and authentic craftsmanship.";
   let index = 0;
+  
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -37,7 +39,6 @@ const Home = ({ menuOpen }) => {
 
         <div className="title-container">
           <h1 className="title">
-            {/*  */}
             {titleText}
           </h1>
           <Link className="shopBtn" to="/shop">

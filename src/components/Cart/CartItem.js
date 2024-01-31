@@ -1,7 +1,8 @@
 import { useDispatch } from "react-redux";
 import dataWines from "../../data/dataWines";
 import trash from "../pictures/bin.png";
-import { removeItemFromCart } from "../redux/cartSlice";
+import { removeItemFromCart } from "../../redux/cartSlice";
+
 
 const CartItem = ({ cartItem }) => {
   const wines = dataWines.find((item) => item.id === cartItem.wineId);
@@ -19,7 +20,6 @@ const CartItem = ({ cartItem }) => {
       </p>
       <p>{cartItem.quantity} piece(s)</p>
       <p>
-        {" "}
         <b>Price: ${wines.price * cartItem.quantity}</b>{" "}
       </p>
       <span
