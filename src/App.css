@@ -11,6 +11,11 @@ body {
 }
 
 
+.navOpen::-webkit-scrollbar {
+  display: none;
+}
+
+
 .mainVideoPage {
   height: 100vh;
   animation: fadeIn 2s ease;

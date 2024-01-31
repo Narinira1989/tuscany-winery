@@ -13,23 +13,24 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    const body = document.body;
+    body.classList.toggle("navOpen");
     setMenuOpen(!menuOpen);
   };
 
-
-  
-
   return (
     <div className="App">
-      <Router>
-        <Navbar menuOpen={menuOpen} toggleMenu={toggleMenu} />
-        <Routes>
-          <Route path="/" element={<Home menuOpen={menuOpen} />} />
-          <Route path="/about-us" element={<About menuOpen={menuOpen} />} />
-          <Route path="/shop" element={<Shop menuOpen={menuOpen} />} />
-          <Route path="/contacts" element={<Contacts menuOpen={menuOpen} />} />
-        </Routes>
-      </Router>
+      <div className="contentWrapper">
+        <Router>
+          <Navbar menuOpen={menuOpen} toggleMenu={toggleMenu} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<About />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/contacts" element={<Contacts />} />
+          </Routes>
+        </Router>
+      </div>
       <Footer />
     </div>
   );

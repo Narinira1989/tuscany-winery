@@ -4,11 +4,8 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "./pictures/logo.png";
 
-
 const Navbar = (props) => {
   const { menuOpen, toggleMenu } = props;
-  
-
 
   return (
     <header>
@@ -39,5 +36,3 @@ const Navbar = (props) => {
 };
 
 export default Navbar;
-
-
