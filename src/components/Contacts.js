@@ -63,18 +63,14 @@ const Contacts = ({ menuOpen }) => {
         <div className="phones">
           <h3 className="newWinesTitle">Phones</h3>
           <div>
-            {" "}
-            Office:{" "}
+            Office:
             <a href="tel:+1234567890" className="color-change">
-              {" "}
               +39 02 1234567
             </a>
           </div>
           <div>
-            {" "}
-            Fax:{" "}
+            Fax:
             <a href="tel:+1234567890" className="color-change">
-              {" "}
               +39 02 1234567
             </a>
           </div>
