@@ -1,16 +1,24 @@
 
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "./pictures/logo.png";
 
-const Navbar = (props) => {
-  const { menuOpen, toggleMenu } = props;
+const Navbar = () => {
+  
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    const body = document.body;
+    body.classList.toggle("navOpen");
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <header>
       <img className="logo" src={logo} alt="Logo" width="100px" />
       <nav className={menuOpen ? "responsiveNav" : ""}>
+        
         <Link to="/" onClick={toggleMenu}>
           HOME
         </Link>

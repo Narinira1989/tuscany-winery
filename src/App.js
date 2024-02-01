@@ -1,6 +1,6 @@
 
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,19 +10,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    const body = document.body;
-    body.classList.toggle("navOpen");
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <div className="App">
       <div className="contentWrapper">
         <Router>
-          <Navbar menuOpen={menuOpen} toggleMenu={toggleMenu} />
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<About />} />
