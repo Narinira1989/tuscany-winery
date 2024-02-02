@@ -16,7 +16,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <img className="logo" src={logo} alt="Logo" width="100px" />
+      <Link to="/">
+        <img className="logo" src={logo} alt="Logo" width="100px" />
+      </Link>
       <nav className={menuOpen ? "responsiveNav" : ""}>
         
         <Link to="/" onClick={toggleMenu}>
