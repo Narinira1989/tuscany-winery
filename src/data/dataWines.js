@@ -2,7 +2,7 @@ const dataWines = [
   {
     id: 1,
     price: 15,
-    img: "/photos/01.jpg",
+    img: "/photos/01.png",
     name: "Chardonnay",
     category: "WHITE",
   },
@@ -10,7 +10,7 @@ const dataWines = [
   {
     id: 2,
     price: 25,
-    img: "/photos/02.jpg",
+    img: "/photos/02.png",
     name: "Cabernet Sauvignion",
     category: "RED",
   },
@@ -18,7 +18,7 @@ const dataWines = [
   {
     id: 3,
     price: 18,
-    img: "/photos/03.jpg",
+    img: "/photos/03.png",
     name: "Tuscany Merlot",
     category: "RED",
   },
@@ -26,7 +26,7 @@ const dataWines = [
   {
     id: 4,
     price: 12,
-    img: "/photos/04.jpg",
+    img: "/photos/04.png",
     name: "Sauvignon Blanc",
     category: "RED",
   },
@@ -34,7 +34,7 @@ const dataWines = [
   {
     id: 5,
     price: 23,
-    img: "/photos/05.jpg",
+    img: "/photos/05.png",
     name: "Nebbiolo",
     category: "WHITE",
   },
@@ -42,7 +42,7 @@ const dataWines = [
   {
     id: 6,
     price: 28,
-    img: "/photos/06.jpg",
+    img: "/photos/06.png",
     name: "Paros Zinfandel",
     category: "RED",
   },
@@ -50,7 +50,7 @@ const dataWines = [
   {
     id: 7,
     price: 18,
-    img: "/photos/07.jpg",
+    img: "/photos/07.png",
     name: "Borsao Pinot Noir",
     category: "RED",
   },
@@ -58,7 +58,7 @@ const dataWines = [
   {
     id: 8,
     price: 15,
-    img: "/photos/08.jpg",
+    img: "/photos/08.png",
     name: "Chianti Merlot",
     category: "WHITE",
   },
@@ -66,7 +66,7 @@ const dataWines = [
   {
     id: 9,
     price: 17,
-    img: "/photos/09.jpg",
+    img: "/photos/09.png",
     name: "Carlo Rossi",
     category: "WHITE",
   },
@@ -74,7 +74,7 @@ const dataWines = [
   {
     id: 10,
     price: 22,
-    img: "/photos/10.jpg",
+    img: "/photos/10.png",
     name: "Sangiovese",
     category: "RED",
   },
@@ -82,7 +82,7 @@ const dataWines = [
   {
     id: 11,
     price: 22,
-    img: "/photos/11.jpg",
+    img: "/photos/11.png",
     name: "Cabernet Sauvignion",
     category: "WHITE",
   },
@@ -90,7 +90,7 @@ const dataWines = [
   {
     id: 12,
     price: 29,
-    img: "/photos/12.jpg",
+    img: "/photos/12.png",
     name: "Shiraz Rosé",
     category: "ROSE",
   },
@@ -98,7 +98,7 @@ const dataWines = [
   {
     id: 13,
     price: 24,
-    img: "/photos/13.jpg",
+    img: "/photos/13.png",
     name: "Grenache Rosé",
     category: "ROSE",
   },
@@ -106,7 +106,7 @@ const dataWines = [
   {
     id: 14,
     price: 14,
-    img: "/photos/14.jpg",
+    img: "/photos/14.png",
     name: "Sangiovese",
     category: "ROSE",
   },
@@ -114,7 +114,7 @@ const dataWines = [
   {
     id: 15,
     price: 29,
-    img: "/photos/15.jpg",
+    img: "/photos/15.png",
     name: "Rosé de Provence",
     category: "ROSE",
   },
@@ -122,7 +122,7 @@ const dataWines = [
   {
     id: 16,
     price: 49,
-    img: "/photos/16.jpg",
+    img: "/photos/16.png",
     name: "Semillon",
     category: "WHITE",
   },
@@ -130,7 +130,7 @@ const dataWines = [
   {
     id: 17,
     price: 22,
-    img: "/photos/17.jpg",
+    img: "/photos/17.png",
     name: "Viognier",
     category: "WHITE",
   },
@@ -138,7 +138,7 @@ const dataWines = [
   {
     id: 18,
     price: 17,
-    img: "/photos/18.jpg",
+    img: "/photos/18.png",
     name: "Antano Pinot",
     category: "WHITE",
   },
@@ -146,7 +146,7 @@ const dataWines = [
   {
     id: 19,
     price: 18,
-    img: "/photos/19.jpg",
+    img: "/photos/19.png",
     name: "Champagne",
     category: "WHITE",
   },
@@ -154,7 +154,7 @@ const dataWines = [
   {
     id: 20,
     price: 29,
-    img: "/photos/20.jpg",
+    img: "/photos/20.png",
     name: "Brut",
     category: "WHITE",
   },
@@ -162,7 +162,7 @@ const dataWines = [
   {
     id: 21,
     price: 32,
-    img: "/photos/21.jpg",
+    img: "/photos/21.png",
     name: "Semillon",
     category: "RED",
   },
@@ -170,7 +170,7 @@ const dataWines = [
   {
     id: 22,
     price: 24,
-    img: "/photos/22.jpg",
+    img: "/photos/22.png",
     name: "Shiraz Rosé",
     category: "ROSE",
   },
@@ -178,7 +178,7 @@ const dataWines = [
   {
     id: 23,
     price: 31,
-    img: "/photos/23.jpg",
+    img: "/photos/23.png",
     name: "Brut Champagne",
     category: "WHITE",
   },
@@ -186,7 +186,7 @@ const dataWines = [
   {
     id: 24,
     price: 44,
-    img: "/photos/24.jpg",
+    img: "/photos/24.png",
     name: "Burgundy",
     category: "RED",
   },
@@ -194,7 +194,7 @@ const dataWines = [
   {
     id: 25,
     price: 19,
-    img: "/photos/25.jpg",
+    img: "/photos/25.png",
     name: "Chenin Blanc",
     category: "WHITE",
   },
@@ -202,7 +202,7 @@ const dataWines = [
   {
     id: 26,
     price: 29,
-    img: "/photos/26.jpg",
+    img: "/photos/26.png",
     name: "Pinot Noir",
     category: "RED",
   },
@@ -210,7 +210,7 @@ const dataWines = [
   {
     id: 27,
     price: 19,
-    img: "/photos/27.jpg",
+    img: "/photos/27.png",
     name: "Bubble Wine",
     category: "WHITE",
   },
@@ -218,7 +218,7 @@ const dataWines = [
   {
     id: 28,
     price: 29,
-    img: "/photos/28.jpg",
+    img: "/photos/28.png",
     name: "Tempranillo",
     category: "RED",
   },
@@ -226,7 +226,7 @@ const dataWines = [
   {
     id: 29,
     price: 35,
-    img: "/photos/29.jpg",
+    img: "/photos/29.png",
     name: "Riesling",
     category: "WHITE",
   },
@@ -234,7 +234,7 @@ const dataWines = [
   {
     id: 30,
     price: 29,
-    img: "/photos/30.jpg",
+    img: "/photos/30.png",
     name: "Pinot Noir",
     category: "RED",
   },
